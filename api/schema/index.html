@@ -350,6 +350,26 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/contributing/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -509,11 +529,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delta-lake-best-practices/" class="md-nav__link">
+      <a href="../../latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Best practices
+    Latest changes
   </span>
   
 
@@ -537,6 +557,8 @@
   
     
     
+      
+        
       
         
       
@@ -930,6 +952,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../usage/delta-lake-best-practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Best practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     
     
       
@@ -948,10 +990,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_14" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -962,8 +1004,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
             <span class="md-nav__icon md-icon"></span>
             Optimize
           </label>
@@ -2360,6 +2402,100 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2796,25 +2932,15 @@
 
   
       <p>A Delta Lake schema</p>
-<p>Create using a list of :class:<code>Field</code>:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Schema([Field("x", "integer"), Field("y", "string")])
-Schema([Field(x, PrimitiveType("integer"), nullable=True), Field(y, PrimitiveType("string"), nullable=True)])</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>Or create from a PyArrow schema:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from arro3.core import DateType, Schema as ArrowSchema
-Schema.from_pyarrow(ArrowSchema({"x": DateType.int32(), "y": DateType.string()}))
-Schema([Field(x, PrimitiveType("integer"), nullable=True), Field(y, PrimitiveType("string"), nullable=True)])</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<p>Create using a list of <a class="autorefs autorefs-internal" href="#deltalake.Field">deltalake.Field</a>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Schema</span><span class="p">([</span><span class="n">Field</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;integer&quot;</span><span class="p">),</span> <span class="n">Field</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;string&quot;</span><span class="p">)])</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Schema</span><span class="p">([</span><span class="n">Field</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">PrimitiveType</span><span class="p">(</span><span class="s2">&quot;integer&quot;</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">Field</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">PrimitiveType</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)])</span>
+</span></code></pre></div>
+<p>Or create from a <a class="autorefs autorefs-external" href="https://arrow.apache.org/docs/python/generated/pyarrow.Schema.html#pyarrow.Schema">pyarrow.Schema</a>:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">arro3.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">DateType</span><span class="p">,</span> <span class="n">Schema</span> <span class="k">as</span> <span class="n">ArrowSchema</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Schema</span><span class="o">.</span><span class="n">from_pyarrow</span><span class="p">(</span><span class="n">ArrowSchema</span><span class="p">({</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">DateType</span><span class="o">.</span><span class="n">int32</span><span class="p">(),</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">DateType</span><span class="o">.</span><span class="n">string</span><span class="p">()}))</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Schema</span><span class="p">([</span><span class="n">Field</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">PrimitiveType</span><span class="p">(</span><span class="s2">&quot;integer&quot;</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">Field</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">PrimitiveType</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">),</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)])</span>
+</span></code></pre></div>
 
 
   

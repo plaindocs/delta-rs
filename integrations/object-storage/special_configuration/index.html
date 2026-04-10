@@ -352,6 +352,26 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/contributing/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -511,11 +531,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../delta-lake-best-practices/" class="md-nav__link">
+      <a href="../../../latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Best practices
+    Latest changes
   </span>
   
 
@@ -539,6 +559,8 @@
   
     
     
+      
+        
       
         
       
@@ -932,6 +954,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../usage/delta-lake-best-practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Best practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     
     
       
@@ -950,10 +992,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_14" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -964,8 +1006,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
             <span class="md-nav__icon md-icon"></span>
             Optimize
           </label>
@@ -2023,6 +2065,100 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2095,7 +2231,7 @@
 
 
 <h1 id="advanced-object-storage-configuration">Advanced object storage configuration</h1>
-<p>Delta-rs provides some addition values to be set in the storage_options for advanced use case:</p>
+<p>Delta-rs provides some additional values to be set in the storage_options for advanced use cases:</p>
 <ul>
 <li>Limit concurrent requests overall</li>
 <li>Set retry configuration</li>
@@ -2217,6 +2353,10 @@
 <tr>
 <td><code>default_content_type</code></td>
 <td>Default Content-Type header for uploads when not otherwise specified. Example: <code>application/octet-stream</code></td>
+</tr>
+<tr>
+<td><code>certificate_path</code></td>
+<td>Path to a PEM-encoded root certificate file for TLS connections. Example: <code>/path/to/my_cert.pem</code></td>
 </tr>
 </tbody>
 </table>

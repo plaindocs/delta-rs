@@ -6,17 +6,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/delta-io/delta-rs/delta-lake-best-practices/</loc>
-         <lastmod>2026-04-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/delta-io/delta-rs/delta-lake-big-data-small-data/</loc>
          <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/delta-io/delta-rs/latest/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/delta-io/delta-rs/why-use-delta-lake/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/delta-io/delta-rs/about/contributing/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/delta-io/delta-rs/about/history/</loc>
          <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -186,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/delta-io/delta-rs/usage/delta-lake-best-practices/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/delta-io/delta-rs/usage/examining-table/</loc>
          <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
@@ -222,6 +237,11 @@
     </url>
     <url>
          <loc>https://github.com/delta-io/delta-rs/usage/read-cdf/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/delta-io/delta-rs/usage/working-with-partitions/</loc>
          <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>

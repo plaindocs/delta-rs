@@ -350,6 +350,26 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/contributing/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -509,11 +529,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../delta-lake-best-practices/" class="md-nav__link">
+      <a href="../../../latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Best practices
+    Latest changes
   </span>
   
 
@@ -537,6 +557,8 @@
   
     
     
+      
+        
       
         
       
@@ -930,6 +952,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../usage/delta-lake-best-practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Best practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
     
     
       
@@ -948,10 +990,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_14" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -962,8 +1004,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
             <span class="md-nav__icon md-icon"></span>
             Optimize
           </label>
@@ -2021,6 +2063,100 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2110,7 +2246,7 @@
   <div class="doc doc-contents first">
 
   
-      <p>API for various table optimization commands.</p>
+      <p>API for table optimization commands.</p>
 
 
   
@@ -2135,16 +2271,17 @@
 
 
 </h4>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">compact</span><span class="p">(</span><span class="n">partition_filters</span><span class="p">:</span> <span class="n">FilterConjunctionType</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">target_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_concurrent_tasks</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_spill_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_temp_directory_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">min_commit_interval</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">timedelta</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer_properties</span><span class="p">:</span> <span class="n">WriterProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">post_commithook_properties</span><span class="p">:</span> <span class="n">PostCommitHookProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">commit_properties</span><span class="p">:</span> <span class="n">CommitProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">compact</span><span class="p">(</span><span class="n">partition_filters</span><span class="p">:</span> <span class="n">FilterConjunctionType</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">target_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_concurrent_tasks</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_spill_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_temp_directory_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">min_commit_interval</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">timedelta</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer_properties</span><span class="p">:</span> <span class="n">WriterProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">commit_properties</span><span class="p">:</span> <span class="n">CommitProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">post_commithook_properties</span><span class="p">:</span> <span class="n">PostCommitHookProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
   
-      <p>Compacts small files to reduce the total number of files in the table.</p>
+      <p>Compacts small files to reduce read overhead.</p>
 <p>This operation is idempotent; if run twice on the same table (assuming it has
 not been updated) it will do nothing the second time.</p>
-<p>If this operation happens concurrently with any operations other than append,
-it will fail.</p>
+<p>Compaction keeps file order within each partition.</p>
+<p>The target size is approximate.</p>
+<p>If this operation runs with any operation other than append, it fails.</p>
 
 
 
@@ -2166,7 +2303,7 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>the partition filters that will be used for getting the matched files</p>
+              <p>partition filters used to match files</p>
             </div>
           </td>
           <td>
@@ -2180,9 +2317,8 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>desired file size after bin-packing files, in bytes. If not
-            provided, will attempt to read the table configuration value <code>delta.targetFileSize</code>.
-            If that value isn't set, will use default value of 100MB.</p>
+              <p>approximate target file size in bytes.
+            If not provided, this uses <code>delta.targetFileSize</code> or 100MB.</p>
             </div>
           </td>
           <td>
@@ -2264,20 +2400,6 @@ it will fail.</p>
           </td>
         </tr>
         <tr>
-          <td><code>post_commithook_properties</code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="deltalake.transaction.PostCommitHookProperties" href="../../transaction/#deltalake.PostCommitHookProperties">PostCommitHookProperties</a> | None</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>properties for the post commit hook. If None, default values are used.</p>
-            </div>
-          </td>
-          <td>
-                <code>None</code>
-          </td>
-        </tr>
-        <tr>
           <td><code>commit_properties</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="deltalake.transaction.CommitProperties" href="../../transaction/#deltalake.CommitProperties">CommitProperties</a> | None</code>
@@ -2285,6 +2407,20 @@ it will fail.</p>
           <td>
             <div class="doc-md-description">
               <p>properties of the transaction commit. If None, default values are used.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>post_commithook_properties</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="deltalake.transaction.PostCommitHookProperties" href="../../transaction/#deltalake.PostCommitHookProperties">PostCommitHookProperties</a> | None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>properties for the post commit hook. If None, default values are used.</p>
             </div>
           </td>
           <td>
@@ -2311,7 +2447,7 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>the metrics from optimize</p>
+              <p>optimize metrics</p>
             </div>
           </td>
         </tr>
@@ -2331,7 +2467,7 @@ it will fail.</p>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">dt</span> <span class="o">=</span> <span class="n">DeltaTable</span><span class="p">(</span><span class="s2">&quot;tmp&quot;</span><span class="p">)</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">time_delta</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">dt</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">compact</span><span class="p">(</span><span class="n">min_commit_interval</span><span class="o">=</span><span class="n">time_delta</span><span class="p">)</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">{</span><span class="s1">&#39;numFilesAdded&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numFilesRemoved&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;filesAdded&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;filesRemoved&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;partitionsOptimized&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numBatches&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalConsideredFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalFilesSkipped&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;preserveInsertionOrder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">{</span><span class="s1">&#39;numFilesAdded&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numFilesRemoved&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;filesAdded&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;filesRemoved&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;partitionsOptimized&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numBatches&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalConsideredFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalFilesSkipped&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;plannerStrategy&#39;</span><span class="p">:</span> <span class="s1">&#39;preserveLocality&#39;</span><span class="p">,</span> <span class="s1">&#39;preservedStableOrder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;preserveInsertionOrder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;maxBinSpanFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </span></code></pre></div></p>
 </details>
   </div>
@@ -2348,13 +2484,14 @@ it will fail.</p>
 
 
 </h4>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">z_order</span><span class="p">(</span><span class="n">columns</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">partition_filters</span><span class="p">:</span> <span class="n">FilterConjunctionType</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">target_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_concurrent_tasks</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_spill_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_temp_directory_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">min_commit_interval</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">timedelta</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer_properties</span><span class="p">:</span> <span class="n">WriterProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">post_commithook_properties</span><span class="p">:</span> <span class="n">PostCommitHookProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">commit_properties</span><span class="p">:</span> <span class="n">CommitProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">z_order</span><span class="p">(</span><span class="n">columns</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">partition_filters</span><span class="p">:</span> <span class="n">FilterConjunctionType</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">target_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_concurrent_tasks</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_spill_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_temp_directory_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">min_commit_interval</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">timedelta</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer_properties</span><span class="p">:</span> <span class="n">WriterProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">commit_properties</span><span class="p">:</span> <span class="n">CommitProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">post_commithook_properties</span><span class="p">:</span> <span class="n">PostCommitHookProperties</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
   
       <p>Reorders the data using a Z-order curve to improve data skipping.</p>
-<p>This also performs compaction, so the same parameters as compact() apply.</p>
+<p>This also performs compaction, so the same parameters as compact() apply.
+Z order rewrites file order.</p>
 
 
 
@@ -2390,7 +2527,7 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>the partition filters that will be used for getting the matched files</p>
+              <p>partition filters used to match files</p>
             </div>
           </td>
           <td>
@@ -2404,9 +2541,8 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>desired file size after bin-packing files, in bytes. If not
-            provided, will attempt to read the table configuration value <code>delta.targetFileSize</code>.
-            If that value isn't set, will use default value of 100MB.</p>
+              <p>approximate target file size in bytes.
+            If not provided, this uses <code>delta.targetFileSize</code> or 100MB.</p>
             </div>
           </td>
           <td>
@@ -2488,20 +2624,6 @@ it will fail.</p>
           </td>
         </tr>
         <tr>
-          <td><code>post_commithook_properties</code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="deltalake.transaction.PostCommitHookProperties" href="../../transaction/#deltalake.PostCommitHookProperties">PostCommitHookProperties</a> | None</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>properties for the post commit hook. If None, default values are used.</p>
-            </div>
-          </td>
-          <td>
-                <code>None</code>
-          </td>
-        </tr>
-        <tr>
           <td><code>commit_properties</code></td>
           <td>
                 <code><a class="autorefs autorefs-internal" title="deltalake.transaction.CommitProperties" href="../../transaction/#deltalake.CommitProperties">CommitProperties</a> | None</code>
@@ -2509,6 +2631,20 @@ it will fail.</p>
           <td>
             <div class="doc-md-description">
               <p>properties of the transaction commit. If None, default values are used.</p>
+            </div>
+          </td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>post_commithook_properties</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="deltalake.transaction.PostCommitHookProperties" href="../../transaction/#deltalake.PostCommitHookProperties">PostCommitHookProperties</a> | None</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>properties for the post commit hook. If None, default values are used.</p>
             </div>
           </td>
           <td>
@@ -2535,7 +2671,7 @@ it will fail.</p>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>the metrics from optimize</p>
+              <p>optimize metrics</p>
             </div>
           </td>
         </tr>
@@ -2555,7 +2691,7 @@ it will fail.</p>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">dt</span> <span class="o">=</span> <span class="n">DeltaTable</span><span class="p">(</span><span class="s2">&quot;tmp&quot;</span><span class="p">)</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">time_delta</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">dt</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">z_order</span><span class="p">([</span><span class="s2">&quot;x&quot;</span><span class="p">],</span> <span class="n">min_commit_interval</span><span class="o">=</span><span class="n">time_delta</span><span class="p">)</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">{</span><span class="s1">&#39;numFilesAdded&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numFilesRemoved&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;filesAdded&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;filesRemoved&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;partitionsOptimized&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;numBatches&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;totalConsideredFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalFilesSkipped&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;preserveInsertionOrder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">{</span><span class="s1">&#39;numFilesAdded&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;numFilesRemoved&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;filesAdded&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;filesRemoved&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;partitionsOptimized&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;numBatches&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;totalConsideredFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;totalFilesSkipped&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;plannerStrategy&#39;</span><span class="p">:</span> <span class="s1">&#39;zOrder&#39;</span><span class="p">,</span> <span class="s1">&#39;preservedStableOrder&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;preserveInsertionOrder&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;maxBinSpanFiles&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </span></code></pre></div></p>
 </details>
   </div>
